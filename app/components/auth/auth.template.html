@@ -1,0 +1,36 @@
+<div class="container row">
+
+    <div class="section"></div>
+
+
+        <div class="offset-m5 offset-s3 col s6 m2">
+            <img src="img/fbaul_logo.png" alt="" class="circle responsive-img z-depth-2">
+        </div>
+        <div class="section col s12"></div>
+        <h5 class="col s12 center-align grey-text text-darken-2" style="font-family: 'Raleway', sans-serif;">Galeria Virtual</h5>
+        
+        <h5 class="col s12"></h5>
+
+        <div class="row offset-m3 col s12 m6">
+                
+                <ul class="tabs tabs-fixed-width">
+                    <li class="tab col s3 "><a class="active grey-text" href="#login">Entrar</a></li>
+                    <li class="tab col s3 "><a class="grey-text" href="#register">Registar</a></li>
+                    <div class="indicator grey darken-1"></div>
+                </ul>
+            
+
+                <login-form id="login"></login-form>
+                <register-form id="register"></register-form>
+            
+        </div>
+
+</div>
+
+<script>
+    
+    $(document).ready(function () {
+        $('ul.tabs').tabs();
+    });
+
+</script>

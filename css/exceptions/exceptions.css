@@ -1,0 +1,60 @@
+.circle.responsive-img{
+    border: 3px solid white;
+}
+
+div.row,
+form .input-field input,
+form .input-field,
+.select-wrapper input.select-dropdown
+{
+    margin-bottom: 0;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=password]:focus + label {
+  color: #bf360c;
+}
+   /* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid #bf360c;
+  box-shadow: 0 1px 0 0 #bf360c;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #bf360c;
+}
+
+.tabs .tab a.grey-text.active{
+  color: #212121 !important;
+  font-weight: bold;
+}
+
+nav .brand-logo img{
+  height: 4rem;
+}
+
+.autocomplete-content.dropdown-content *{
+  color: #bf360c;
+}
+
+.slider .indicators .indicator-item.active{
+  background-color: #212121 !important;
+}
+
+@media (max-width: 600px){
+  #confirm-password-container{
+    margin-top: 1.3rem;
+  }
+}
+
+@media (min-width: 600px){
+  nav .brand-logo{
+    margin-left: 1rem;
+  }
+}
+
+blockquote {
+    border-left: 5px solid #212121;
+}

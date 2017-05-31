@@ -1,0 +1,85 @@
+<div class="navbar-fixed">
+    <nav class="white">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo left"><img src="img/fbaul_logo.png"></a>
+            <form class="right grey lighten-3">
+                <div class="input-field">
+                    <input id="search" type="search" class="autocomplete" required>
+                    <label class="label-icon" for="search"><i class="material-icons grey-text text-darken-4">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+</div>
+
+<div class="fixed-action-btn toolbar">
+    <a class="btn-floating btn-large deep-orange darken-4">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+        <li class="waves-effect waves-light"><a href="#!/home"><i class="material-icons">home</i></a></li>
+        <li class="waves-effect waves-light"><a href="#!/user/profile"><i class="material-icons">account_circle</i></a></li>
+        <li class="waves-effect waves-light"><a href="#!/user/collections"><i class="material-icons">flip_to_front</i></a></li>
+        <li class="waves-effect waves-light"><a><i class="material-icons">help_outline</i></a></li>
+    </ul>
+</div>
+
+
+<div class="row container">
+    <div class="col s12">
+        <h5>As minhas coleções</h5>
+    </div>
+
+    <ul class="collection col s12">
+    <li class="collection-item avatar" style="min-height: 3rem;">
+      <img src="img/COIL.jpg" alt="" class="circle" style="left: 0.5rem;">
+      <span class=""><b>Design Editorial</b></span>
+      <p>Último adicionado - Where even the darkness is something to see</p>
+      <a href="#!" class="secondary-content" style="top: 0.5rem; right: 0;"><i class="material-icons grey-text">close</i></a>
+    </li>
+    <li class="collection-item avatar" style="min-height: 3rem;">
+      <img src="img/peixe_p.png" alt="" class="circle" style="left: 0.5rem;">
+      <span class=""><b>Ilustração Científica</b></span>
+      <p>Último adicionado - Pormenor Animal</p>
+      <a href="#!" class="secondary-content" style="top: 0.5rem; right: 0;"><i class="material-icons grey-text">close</i></a>
+    </li>
+    <li class="collection-item avatar" style="min-height: 3rem;">
+      <img src="img/sem-referencia_l.jpg" alt="" class="circle" style="left: 0.5rem;">
+      <span class=""><b>Pintura</b></span>
+      <p>Último adicionado - Círculos Cromáticos</p>
+      <a href="#!" class="secondary-content" style="top: 0.5rem; right: 0;"><i class="material-icons grey-text">close</i></a>
+    </li>
+    <li class="collection-item avatar" style="min-height: 3rem;">
+      <img src="img/Virtualidades-Urbanas-11.jpg" alt="" class="circle" style="left: 0.5rem;">
+      <span class=""><b>Fotografia</b></span>
+      <p>Último Adicionado - Virtualidades Urbanas</p>
+      <a href="#!" class="secondary-content" style="top: 0.5rem; right: 0;"><i class="material-icons grey-text">close</i></a>
+    </li>
+  </ul>
+</div>
+<script>
+    $(document).ready(function () {
+
+        $('input.autocomplete').autocomplete({
+            data: {
+                "Desenho": null,
+                "Design": null,
+                "Pintura": null,
+                "Escultura": null,
+                "Fotografia": null,
+                "Ilustração": null,
+                "Multimédia": null,
+                "Restauro": null,
+                "Vídeo": null,
+                "Todos": null
+            },
+            limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+            onAutocomplete: function (val) {
+                // Callback function when value is autcompleted.
+            },
+            minLength: 0, // The minimum length of the input for the autocomplete to start. Default: 1.
+        });
+    });
+
+</script>
