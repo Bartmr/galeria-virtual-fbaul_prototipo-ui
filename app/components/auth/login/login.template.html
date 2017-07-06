@@ -1,23 +1,40 @@
 <div class="row">
-<form class="col s12" ng-submit="login()" novalidate>
-    <div class="section"></div>
-    <div class="row">
-        <div class="input-field col s12">
-            <input id="user" type="text" class="validate" ng-class="{'invalid' : invalid}" ng-model="email">
-            <label for="user">Email</label>
+    <form class="col s12" ng-submit="login()" novalidate>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="user" type="text" class="validate" ng-class="{'invalid' : invalid}" ng-model="email">
+                <label for="user">Email</label>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="input-field col s12">
-            <input id="password" type="password" class="validate" ng-class="{'invalid' : invalid}" ng-model="password">
-            <label for="password">Palavra-passe</label>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="password" type="password" class="validate" ng-class="{'invalid' : invalid}" ng-model="password">
+                <label for="password">Palavra-passe</label>
+            </div>
         </div>
-    </div>
-    <div class="section"></div>
-    <div class="row">
-        <div class="col s12 right-align">
-            <button type="submit" class="waves-effect waves-light btn" ng-class="{'grey darken-3' : !invalid,'red darken-3' : invalid}">Entrar</button>
+        <div class="section"></div>
+        <div class="row">
+            <div class="col s12 right-align">
+                <button type="submit" class="waves-effect waves-light btn btn-large" ng-class="{'grey darken-3' : !invalid,'red darken-3' : invalid}"><i class="material-icons">send</i></button>
+            </div>
+
+
+
         </div>
-    </div>
-</form>
+        <div class="section"></div>
+        <div class="row">
+            <div class="col s12 row">
+                <button class="waves-effect waves-light btn btn-large col s12 indigo darken-2">
+                    <img src="img/facebook-square.svg" style="position: relative; height: 24px; top: 0.4rem;margin-right: 0.5rem;">
+                    Login with Facebook
+                    </button>
+            </div>
+            <div class="col s12 row" style="margin-top: 16px;">
+                <button class="waves-effect waves-light btn btn-large col s12 red darken-2">
+                    <img src="img/google.svg" style="position: relative; height: 24px; top: 0.4rem;margin-right: 0.7rem;">
+                    Login with Google
+                    </button>
+            </div>
+        </div>
+    </form>
 </div>
